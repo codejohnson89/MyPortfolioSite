@@ -1,0 +1,268 @@
+body {
+  background-color: #242424;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.special {
+  background-image: url('../../public/images/pattern-rings.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 530px;
+  height: 129px;
+  position: relative;
+  left: -17em;
+  top: 5em;
+}
+
+main {
+  gap: 5em;
+  align-items: center;
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.fluid img{
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 1rem;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+footer.container {
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .contentContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 220px;
+  justify-content: space-around;
+  margin-bottom: 92px;
+}
+
+.portfolioIntro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1023px) {
+  footer .contentContainer {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+  }
+}
+
+footer .socialSection {
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  padding: 47px 0 92px;
+}
+
+.contact,
+.email {
+  max-width: 445px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  flex-shrink: 0;
+}
+
+.email form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.smInput {
+  height: 43px;
+  width: 100%;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+.lgInput {
+  height: 107px;
+  width: 100%;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #fff;
+  color: #FFF;
+}
+
+.btnSubmit {
+  max-width: 170px;
+  border: transparent;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: var(--white, #FFF);
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  /* 162.5% */
+  letter-spacing: 2.286px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 39px;
+}
+
+.textContentContainer {
+  max-width: 760px;
+  width: 100%;
+}
+
+.textContentContainer p {
+  max-width: 445px;
+  margin: 43px 0 66px;
+}
+
+.card .buttonContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.card-title {
+  margin: 20px 0 7px;
+}
+
+.portfolioSection {
+  padding: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+    padding-bottom: 5em;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  max-width: 545px;
+}
+
+.customBtn {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.introSection {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5em;
+  overflow: hidden;
+}
+
+.btn-primary {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border: none;
+} 
+
+@media screen and (max-width: 1023px) {
+  body {
+    gap: 2em;
+    padding: 0;
+  }
+
+  main {
+    gap: 2em;
+    padding: 0;
+  }
+
+  .card {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 426px)  {
+  body {
+    max-width: 425px;
+    padding: 1em;
+    display: block;
+  }
+
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.045px;
+  }
+
+  .portfolioIntro {
+    padding: 0px;
+  }
+}
