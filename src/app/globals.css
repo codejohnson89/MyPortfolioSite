@@ -249,11 +249,12 @@ footer .socialSection {
   }
 }
 
-@media screen and (max-width: 426px)  {
+@media screen and (max-width: 420px)  {
   body {
-    max-width: 425px;
+    max-width: 398px;
     padding: 1em;
     display: block;
+    margin: 0 auto;
   }
 
   h1 {

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Intro() {
     return (
@@ -8,7 +9,7 @@ export default function Intro() {
             <div className="textContentContainer">
                 <h1>Nice to meet you!<br/>I&apos;m Micah Johnson.</h1>
                 <p>I am based in Houston, Texas as a front-end developer passionate about building accessible web apps that users love.</p>
-                <button className="btn customBtn">GET IN TOUCH</button>
+                <Link className="btn customBtn" href="#contact">GET IN TOUCH</Link>
             </div>
         </section>
     )

@@ -7,6 +7,7 @@ import github from "../../../public/images/icon-github.svg";
 import email from "../Functions/email.js";
 
 import { useState, useEffect } from 'react';
+import Link from "next/link";
 
 
 
@@ -27,7 +28,7 @@ export default function FooterLayout() {
         <>
             {isClient && 
                 <footer className="container">
-                <div className="contentContainer contactSection">
+                <div id="contact" className="contentContainer contactSection">
                     <div className="contact">
                         <h1>Contact</h1>
                         <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
@@ -46,8 +47,8 @@ export default function FooterLayout() {
                         <h4>Micah Johnson</h4>
                     </div>
                     <div className="social">
-                        <a href="https://www.linkedin.com/in/micah-johnson-1b1b1b1b1/" target="_blank"><Image src={linkedIn} alt="linkedin image"/></a>
-                        <a href="https://www.linkedin.com/in/micah-johnson-1b1b1b1b1/" target="_blank"><Image src={github} alt="github image"/></a>
+                        <Link href="https://www.linkedin.com/in/%F0%9F%A4%B4%F0%9F%8F%BF-micah-johnson-344b7a56/" target="_blank"><Image src={linkedIn} alt="linkedin image"/></Link>
+                        <Link href="https://github.com/codejohnson89" target="_blank"><Image src={github} alt="github image"/></Link>
                     </div>
                 </div>
             </footer>
