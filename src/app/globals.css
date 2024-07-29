@@ -83,7 +83,6 @@ footer.container {
 footer .contentContainer {
   display: flex;
   flex-direction: row;
-  gap: 220px;
   justify-content: space-around;
   margin-bottom: 92px;
 }
