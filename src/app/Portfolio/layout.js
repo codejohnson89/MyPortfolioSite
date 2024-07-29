@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Card from 'react-bootstrap/Card';
 import { portfolio } from '../../../content/portfolio';
 
 export default function Portfolio() {
@@ -8,7 +7,7 @@ export default function Portfolio() {
         <section className="contentContainer portfolioSection row">
             <div className="portfolioIntro">
                 <h1>Projects</h1>
-                <Link href="/">View All Projects</Link>
+                <Link href="https://github.com/codejohnson89">View All Projects</Link>
             </div>
             {portfolio.map((item, index) => {
                 return (
@@ -29,17 +28,6 @@ export default function Portfolio() {
                     </div>
                 )
             })}
-                {/* <div className="card col-sm-6">
-                    <img src="..." className="card-img-top" alt="..."/>
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div className='buttonContainer'>
-                            <a href="#" className="btn btn-primary">View Github</a>
-                            <a href="#" className="btn btn-primary">View Site</a>
-                        </div>
-                    </div>
-                </div> */}
         </section>
     )
 }

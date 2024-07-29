@@ -35,7 +35,7 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1110px;
   padding: 0 1rem;
   display: flex;
   justify-content: center;
@@ -93,16 +93,6 @@ footer .contentContainer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 80px;
-}
-
-@media screen and (max-width: 1023px) {
-  footer .contentContainer {
-    flex-direction: column;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1em;
-  }
 }
 
 footer .socialSection {
@@ -233,26 +223,45 @@ footer .socialSection {
   border: none;
 } 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   body {
     gap: 2em;
-    padding: 0;
+    padding: 0.5rem .25rem;
+    width: 100%;
   }
 
   main {
     gap: 2em;
-    padding: 0;
+    padding: .5rem 1rem;
+    max-width: 100%;
   }
 
   .card {
     padding: 0;
+    max-width: 100%;
+  }
+
+  .portfolioSection {
+    gap: 3rem;
+  }
+
+  .portfolioIntro {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .contentContainer {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
   }
 }
 
-@media screen and (max-width: 420px)  {
+@media screen and (max-width: 540px)  {
   body {
     max-width: 398px;
-    padding: 1em;
+    padding: 1rem;
     display: block;
     margin: 0 auto;
   }
@@ -265,5 +274,9 @@ footer .socialSection {
 
   .portfolioIntro {
     padding: 0px;
+  }
+
+  .portfolioSection {
+    gap: 3rem;
   }
 }

@@ -5,18 +5,29 @@ import linkedIn from "../../../public/images/icon-linkedin.svg";
 import github from "../../../public/images/icon-github.svg";
 
 import email from "../Functions/email.js";
-
+import emailjs from '@emailjs/browser'
 import { useState, useEffect } from 'react';
 import Link from "next/link";
 
 
 
+
 export default function FooterLayout() {
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        email(data);
+        emailjs.send('service_0lijdaq','template_5wg2kp9', data, 'A_nN-t8d3lAtZyvL6')
+        .then((response) => {
+           console.log('SUCCESS!', response.status, response.text);
+           reset({
+                name: '',
+                email: '',
+                message: ''
+           }); // clear
+        }, (err) => {
+           console.log('FAILED...', err);
+        });
     };
     const [ isClient, setIsClient ] = useState(false);
 
@@ -34,7 +45,7 @@ export default function FooterLayout() {
                         <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
                     </div>
                     <div className="email">
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <form id="contact" onSubmit={handleSubmit(onSubmit)}>
                             <input className="smInput" type="text" placeholder="Name" {...register("name", { required: true })} />
                             <input className="smInput" type="text" placeholder="Email" {...register("email", { required: true })} />
                             <input className="lgInput" type="text" placeholder="Message" {...register("message", { required: true })} />
